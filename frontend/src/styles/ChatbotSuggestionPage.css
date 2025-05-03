@@ -1,0 +1,113 @@
+.chatbot-suggestion-page {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .chatbot-suggestion-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Dropdown blocks */
+  .chatbot-suggestion-page label {
+    display: block;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .chatbot-suggestion-page select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #2d3748;
+    transition: border-color 0.2s;
+  }
+  
+  .chatbot-suggestion-page select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+  }
+  
+  /* Suggestions list */
+  .suggestions-list {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .suggestion-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .suggestion-item.completed {
+    background-color: #e6fffa;
+    border-color: #38b2ac;
+  }
+  
+  .suggestion-item span {
+    flex: 1;
+    color: #2d3748;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .suggestion-item .completion-count {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-left: 1rem;
+  }
+  
+  .suggestion-item button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .suggestion-item button:hover {
+    background-color: #5a67d8;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .chatbot-suggestion-page {
+      padding: 1rem;
+    }
+  
+    .suggestion-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .suggestion-item button {
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+  }
+  

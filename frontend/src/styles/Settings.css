@@ -1,0 +1,169 @@
+/* General Container */
+.settings-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Dark Mode */
+.settings-container.dark-mode {
+  background-color: #1e1e2f;
+  color: #e1e1e1;
+}
+
+/* Header */
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.settings-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.settings-header button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settings-header button:hover {
+  background-color: #0056b3;
+}
+
+/* Form */
+.settings-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.settings-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.settings-form input,
+.settings-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  font-size: 1rem;
+}
+
+.settings-form input:focus,
+.settings-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.settings-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.settings-form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settings-form button:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+/* FAQ */
+.faq-section {
+  margin-top: 3rem;
+}
+
+.faq-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .faq-item {
+  background-color: #2a2a3d;
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.dark-mode .faq-question {
+  color: #e0e0ff;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.dark-mode .faq-answer {
+  color: #cccccc;
+}
+
+.faq-answer a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.faq-answer a:hover {
+  text-decoration: none;
+}
+
+/* Logout Button */
+.logout-button {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.logout-button button {
+  background-color: #dc3545;
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button button:hover {
+  background-color: #c82333;
+}
