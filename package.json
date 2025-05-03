@@ -1,7 +1,22 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "jwt-decode": "^4.0.0",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^3.8.1"
+=======
+  "name": "mindguard-main",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000i\u0000n\u0000d\u0000g\u0000u\u0000a\u0000r\u0000d\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docx": "^9.2.0"
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0
   }
 }

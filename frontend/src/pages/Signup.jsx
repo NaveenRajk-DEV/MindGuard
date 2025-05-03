@@ -21,16 +21,22 @@ const Signup = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div
       className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: "url('/ls.jpeg')" }}
     >
       <motion.div
+=======
+    <div className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/ls.jpeg')" }}>
+      <motion.div 
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0
         className="bg-white/30 backdrop-blur-lg p-8 rounded-lg shadow-lg w-96 relative"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
+<<<<<<< HEAD
         <img
           src="/cross_icon.svg"
           alt="Close"
@@ -68,6 +74,18 @@ const Signup = () => {
             className="text-blue-600 cursor-pointer hover:underline"
             onClick={() => navigate("/login")}
           >
+=======
+        <img src="/cross_icon.svg" alt="Close" className="w-6 h-6 absolute top-4 right-4 cursor-pointer" onClick={() => navigate("/")} />
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Sign Up</h2>
+        <input type="text" placeholder="Full Name" className="w-full p-3 border rounded-md mb-3" onChange={(e) => setFullName(e.target.value)} />
+        <input type="email" placeholder="Email" className="w-full p-3 border rounded-md mb-3" onChange={(e) => setEmail(e.target.value)} />
+        <input type="password" placeholder="Password" className="w-full p-3 border rounded-md mb-3" onChange={(e) => setPassword(e.target.value)} />
+        <button className="w-full bg-purple-500 text-white py-2 rounded-md hover:bg-purple-600 transition" onClick={handleSignup}>
+          Sign Up
+        </button>
+        <p className="text-sm text-center mt-4 text-gray-700">
+          Already have an account? <span className="text-blue-600 cursor-pointer hover:underline" onClick={() => navigate("/login")}>
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0
             Login
           </span>
         </p>
@@ -76,4 +94,8 @@ const Signup = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Signup;
+=======
+export default Signup;
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0

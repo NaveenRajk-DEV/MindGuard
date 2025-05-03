@@ -16,7 +16,11 @@ const Login = ({ setToken }) => {
       if (setToken) {
         setToken(res.data.token);
       }
+<<<<<<< HEAD
       // redirect field from the response 
+=======
+      // Use the redirect field from the response if available
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0
       if (res.data.redirect) {
         navigate(res.data.redirect);
       } else {
@@ -42,12 +46,15 @@ const Login = ({ setToken }) => {
         <button className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition" onClick={handleLogin}>
           Login
         </button>
+<<<<<<< HEAD
         <p 
       className="text-sm text-center mt-3 text-purple-600 cursor-pointer hover:underline"
       onClick={() => navigate("/forgot-password")}
     >
       Forgot Password?
     </p>
+=======
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0
         <p className="text-sm text-center mt-4 text-gray-700">
           Don't have an account? <span className="text-purple-600 cursor-pointer hover:underline" onClick={() => navigate("/signup")}>Sign up</span>
         </p>
@@ -56,4 +63,8 @@ const Login = ({ setToken }) => {
   );
 };
 
+<<<<<<< HEAD
 export default Login;
+=======
+export default Login;
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0

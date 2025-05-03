@@ -4,11 +4,35 @@
 *{
    font-family: Nunito; 
 }
+<<<<<<< HEAD
 .scrollbar-hide::-webkit-scrollbar {
    display: none;
  }
  .scrollbar-hide {
    -ms-overflow-style: none;
    scrollbar-width: none;
+=======
+
+.animated-bg {
+   background: linear-gradient(-45deg, #7fb3d5, #a2d5f2, #76d7c4, #d5f4e6);
+   background-size: 400% 400%;
+   animation: gradientAnimation 10s ease infinite;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ @keyframes gradientAnimation {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+>>>>>>> 233874662a4fd5fdf88e451938f8647a5dacdfd0
  }
  

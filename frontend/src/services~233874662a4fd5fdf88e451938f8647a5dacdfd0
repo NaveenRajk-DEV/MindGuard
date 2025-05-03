@@ -1,0 +1,18 @@
+import axios from "axios";
+
+const API_BASE_URL = "http://localhost:5000/api";
+
+export const fetchTherapists = async () => {
+  const response = await axios.get(`${API_BASE_URL}/therapists`);
+  return response.data;
+};
+
+export const fetchHelplines = async () => {
+  const response = await axios.get(`${API_BASE_URL}/helplines`);
+  return response.data;
+};
+
+export const fetchResources = async () => {
+  const response = await axios.get(`${API_BASE_URL}/resources`);
+  return response.data;
+};
